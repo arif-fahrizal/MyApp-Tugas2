@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="30dp"
+                android:text="UPDATE DATA"
+                android:textSize="20sp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/material1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="40dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/teal_200"
+                app:hintTextColor="@color/teal_200">
+
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:ems="10"
+                    android:hint="Nama Laundry"
+                    android:inputType="text"
+                    android:textSize="17sp">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/material2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material1"
+                android:layout_marginTop="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/teal_200"
+                app:hintTextColor="@color/teal_200">
+
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Alamat"
+                    android:inputType="text"
+                    android:textSize="17sp">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/material3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material2"
+                android:layout_marginTop="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/teal_200"
+                app:hintTextColor="@color/teal_200">
+
+                <EditText
+                    android:id="@+id/et_telepon"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Nomor Telepon"
+                    android:inputType="text"
+                    android:textSize="17sp">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/material4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material3"
+                android:layout_marginTop="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/teal_200"
+                app:hintTextColor="@color/teal_200">
+
+                <EditText
+                    android:id="@+id/et_kota"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:hint="Nama Kota"
+                    android:inputType="text"
+                    android:textSize="17sp">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material4"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#03A9F4"
+                android:text="update">
+            </Button>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
